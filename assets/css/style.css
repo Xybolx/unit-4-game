@@ -51,6 +51,7 @@ body {
     margin-bottom: 10px;
     color: white;
     background-color: darkcyan;
+    align-self: auto;
   }
   
   .crystals-button {
