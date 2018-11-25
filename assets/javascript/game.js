@@ -118,6 +118,7 @@ $(document).ready(function() {
       // Update our "current guess" number and re-render it.
       updateMatchingNumber($(this));
       renderMatchingNumber();
+      $('audio#buttonSound')[0].play()
   
       // Check to see if we have won or lost.
       // If our current guess number equals the target number..
@@ -126,6 +127,7 @@ $(document).ready(function() {
         wins++;
         setGame();
         updateDom(true);
+        $('audio#winSound')[0].play()
       }
       // If our guess number exceeded our target number...
       else if (yourMatchingNumber > randomNum) {
@@ -133,6 +135,7 @@ $(document).ready(function() {
         losses++;
         setGame();
         updateDom(false);
+        $('audio#loseSound')[0].play()
       }
     });
   

@@ -10,13 +10,32 @@
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <audio id="buttonSound">
+      <source src="http://www.sounds.beachware.com/2illionzayp3may/ilssz/ECHOBEL3.mp3">
+
+    </audio>
+
+    <audio id="winSound">
+      <source src="assets/sounds/Winning-sound-effect.mp3">
+
+    </audio>
+
+    <audio id="loseSound">
+      <source src="assets/sounds/You-lose-sound-effect.mp3">
+
+    </audio>
+
+
+
+    
     
   </head>
   <body>
 
     <h1 id="title">CrystalCollector!</h1>
 
-    <div id="rules-area">
+    <div id="rules-area" height="500px">
       <h4>You will be given a random number at the start of the game.</h4>
       <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</h4>
       <h4>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</h4>
