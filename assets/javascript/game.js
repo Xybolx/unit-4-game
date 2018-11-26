@@ -138,6 +138,7 @@ $(document).ready(function() {
         $('audio#loseSound')[0].play()
       }
     });
+    $('audio#bgMusic')[0].play()
   
   });
   

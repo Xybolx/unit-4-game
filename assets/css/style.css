@@ -1,5 +1,8 @@
 body {
-    background-image: url("../images/bg-image.jpg");
+    background-image: url("../images/zelda-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     
   }
   
@@ -16,7 +19,7 @@ body {
     padding: 4px;
     margin-bottom: 10px;
     color: white;
-    background-color: chocolate;
+    background-color: transparent;
   }
   
   #rules-area {
@@ -24,8 +27,8 @@ body {
     height: 400px;
     padding: 4px;
     margin-bottom: 10px;
-    color: green;
-    background-color: bisque;
+    color: yellowgreen;
+    background-color: transparent;
   }
   
   #random-area {
@@ -33,8 +36,8 @@ body {
     height: 100px;
     padding: 4px;
     font-size: 3vw;
-    color: purple;
-    background-color: mediumseagreen;
+    color: rgb(255, 6, 255);
+    background-color: transparent;
   }
   
   #score-area {
@@ -42,7 +45,7 @@ body {
     height: 100px;
     padding: 4px;
     color: ghostwhite;
-    background-color: darkcyan;
+    background-color: transparent;
   }
   
   #score-title {
@@ -50,7 +53,7 @@ body {
     padding: 4px;
     margin-bottom: 10px;
     color: white;
-    background-color: darkcyan;
+    background-color: transparent;
     align-self: auto;
   }
   
@@ -62,9 +65,9 @@ body {
     width: 80px;
     height: 80px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: black;
     border: solid;
-    border-color: lightblue;
+    border-color: currentColor;
   }
   
   #score-number {
@@ -76,6 +79,7 @@ body {
     padding: 4px;
     margin-bottom: 10px;
     margin-left: 10px;
-    background-color: aqua;
+    color: yellow;
+    background-color: transparent;
   }
   
