@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     // If the user won...
     if (didUserWin === true) {
-      // Show victory message, restart the game, and render the new "current guess" number.
+      // Show victory message, animate it, restart the game, and render the new "current guess" number.
       $("#win-area").animate({fontSize: '3em'}, "slow");
       $("#win-area").append($("<p>").text("You won!!"));
       $("#win-area").animate({fontSize: '1em'}, "slow");
@@ -66,7 +66,7 @@ $(document).ready(function () {
     }
     // If the user lost...
     else if (didUserWin === false) {
-      // Show defeat message, restart the game, and render the new "current guess" number.
+      // Show defeat message, animate it, restart the game, and render the new "current guess" number.
       $("#win-area").animate({fontSize: '3em'}, "slow");
       $("#win-area").append($("<p>").text("You lost!!"));
       $("#win-area").animate({fontSize: '1em'}, "slow");
@@ -117,7 +117,7 @@ $(document).ready(function () {
   renderCrystals();
   renderMatchingNumber();
 
-  // Here we create an on.click event for the crystals.
+  // Here we create an on.click event for the crystals with button sounds.
   $(".crystals-button").on("click", function (event) {
     // Update our "current guess" number and re-render it.
     updateMatchingNumber($(this));
@@ -127,7 +127,7 @@ $(document).ready(function () {
     // Check to see if we have won or lost.
     // If our current guess number equals the target number..
     if (yourMatchingNumber === randomNum) {
-      // Increment wins, restart the game, and update the page.
+      // Increment wins, play winning sound, restart the game, and update the page.
       wins++;
       setGame();
       updateDom(true);
@@ -135,13 +135,13 @@ $(document).ready(function () {
     }
     // If our guess number exceeded our target number...
     else if (yourMatchingNumber > randomNum) {
-      // Increment losses, restart the game, and update the page.
+      // Increment losses, play losing sound, restart the game, and update the page.
       losses++;
       setGame();
       updateDom(false);
       $('audio#loseSound')[0].play()
     }
-    $('audio#bgMusic')[0].play()
+    $('audio#bgMusic')[0].play() // jquery to call on our background music audio id. 
   });
 
 
