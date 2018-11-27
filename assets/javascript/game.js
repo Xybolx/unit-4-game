@@ -58,14 +58,18 @@ $(document).ready(function () {
     // If the user won...
     if (didUserWin === true) {
       // Show victory message, restart the game, and render the new "current guess" number.
+      $("#win-area").animate({fontSize: '3em'}, "slow");
       $("#win-area").append($("<p>").text("You won!!"));
+      $("#win-area").animate({fontSize: '1em'}, "slow");
       setGame();
       renderMatchingNumber();
     }
     // If the user lost...
     else if (didUserWin === false) {
       // Show defeat message, restart the game, and render the new "current guess" number.
+      $("#win-area").animate({fontSize: '3em'}, "slow");
       $("#win-area").append($("<p>").text("You lost!!"));
+      $("#win-area").animate({fontSize: '1em'}, "slow");
       setGame();
       renderMatchingNumber();
     }
