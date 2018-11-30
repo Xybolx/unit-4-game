@@ -69,14 +69,13 @@ body {
   
   .crystals-button {
     display: inline;
-    cursor: url('../images/sword.png');
+    
 
   }
   
   .crystal-img {
     width: 80px;
     height: 80px;
-    cursor: pointer;
     background-color: black;
     border: solid;
     border-color: currentColor;
