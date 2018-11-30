@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Aladin');
 
 body {
+  cursor: url('../images/sword.png'), pointer;            
+              
+}
+
+body {
     background-image: url("../images/zelda-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,6 +69,8 @@ body {
   
   .crystals-button {
     display: inline;
+    cursor: url('../images/sword.png');
+
   }
   
   .crystal-img {
