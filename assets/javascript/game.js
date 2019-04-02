@@ -1,5 +1,5 @@
 // Execute this code when the DOM has fully loaded.
-$(document).ready(function () {
+$(document).ready( () => {
 
   // The number we will manipulate by clicking crystals. Our "current guess" number.
   var yourMatchingNumber = 0;
